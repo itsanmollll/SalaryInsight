@@ -1,4 +1,3 @@
-# Importing ToolKits
 import re
 import relations
 import prediction
@@ -14,8 +13,7 @@ from streamlit.components.v1 import html
 from streamlit_option_menu import option_menu
 import warnings
 
-# pd.set_option('future.no_silent_downcasting', True)
-# pd.options.mode.copy_on_write = "warn"
+
 
 
 def run():
