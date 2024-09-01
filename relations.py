@@ -1,4 +1,3 @@
-# Importing ToolKits
 import pandas as pd
 import numpy as np
 import plotly.express as px
@@ -7,8 +6,6 @@ import plotly.express as px
 import streamlit as st
 import warnings
 
-# pd.set_option('future.no_silent_downcasting', True)
-# pd.options.mode.copy_on_write = "warn"
 
 
 def create_heat_map(the_df):
@@ -19,7 +16,6 @@ def create_heat_map(the_df):
         template="plotly_dark",
         text_auto="0.2f",
         aspect=1,
-        # color_continuous_scale="orrd",
         color_continuous_scale="purpor",
         title="Correlation Heatmap of Data",
         height=650,
