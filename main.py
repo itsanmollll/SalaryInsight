@@ -34,10 +34,9 @@ def run():
     def load_linear_regression_model(model_path):
         return pd.read_pickle(model_path)
 
-    df = load_data("salary_data.csv")
-
+    df = load_data("dataset/salary_data.csv")
     model = load_linear_regression_model(
-        "model.pkl")
+        "nb_playground/model.pkl")
 
 
     # Function To Valid Input Data
@@ -298,14 +297,14 @@ Education Level"""
                                 predicted_col, score_col = st.columns(2)
 
                                 with predicted_col:
-                                    st.image("imgs/money.png",
+                                    st.image("templates/money.png",
                                              caption="", width=70)
 
                                     st.subheader("Expected Salary")
                                     st.subheader(f"${predicted_value}")
 
                                 with score_col:
-                                    st.image("imgs/accuracy.png",
+                                    st.image("templates/accuracy.png",
                                              caption="", width=70)
                                     st.subheader("Model Accuracy")
                                     st.subheader(f"{np.round(91.85, 2)}%")
